@@ -54,7 +54,7 @@ img {
   top: 2.243rem;
   bottom: 0;
   padding: 7.125rem 3.75rem 3.125rem 3.125rem;
-  /* height: 100%; */
+  width: 100%;
 }
 .blog_item1_heading {
   font-family: "Outfit", sans-serif;
@@ -380,16 +380,72 @@ button {
   border-left: 0.0625rem solid #a5a49a;
 }
 
-@media (max-width: 772px) {
-  .blog_flexitems {
-    flex-direction: column;
-    align-items: center;
-  }
-  .blog_item1 {
-    width: 100%;
+@media (max-width: 1024px) {
+  /* footer */
+  .footer {
+    margin-top: 3.32rem;
   }
   .footer_container {
-    flex-direction: column;
-    align-items: center;
+    padding: 3.5rem 0rem 7.375rem 0rem;
+    gap: 2rem;
+  }
+  .footer_item1,
+  .footer_item2,
+  .footer_item3,
+  .footer_item4 {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .blog_item1_content-wrapper {
+    padding: 7rem 2rem 1rem 2rem;
+  }
+}
+@media (max-width: 576px) {
+  /* blog */
+  .blog_item1_content-wrapper {
+    padding: 4rem 2rem 1rem 2rem;
+    top: 1rem;
+  }
+  .blog_item1_heading {
+    font-weight: 600;
+    font-size: 1.75rem;
+  }
+  .blog_item1_description {
+    padding: 1rem 0rem;
+  }
+  /* footer */
+  .footer_logo,
+  .footer_description,
+  .footer_socialIcon {
+    padding: 0.8rem 0rem;
+  }
+  .footer_item1,
+  .footer_item2,
+  .footer_item3,
+  .footer_item4 {
+    width: 100%;
+    padding: 0rem 4rem;
+  }
+}
+@media (max-width: 425px) {
+  /* blog */
+  .blog_item1_content-wrapper {
+    padding: 2rem 2rem;
+    top: 3rem;
+  }
+  .blog_item1_heading {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .blog_item1_description {
+    padding: 0rem;
+    font-size: 10px;
+  }
+  .blog_item1-link {
+    font-size: 10px;
+  }
+  input {
+    width: 10rem;
   }
 }
